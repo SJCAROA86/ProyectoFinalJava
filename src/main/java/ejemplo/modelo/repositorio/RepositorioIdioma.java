@@ -3,9 +3,9 @@ package ejemplo.modelo.repositorio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import ejemplo.modelo.entidad.Administrador;
+import ejemplo.modelo.entidad.Idioma;
 
 @Repository
-public interface RepositorioAdminsitrador extends JpaRepository<Administrador, Long>{
+public interface RepositorioIdioma extends JpaRepository<Idioma, Long>{
 
 }

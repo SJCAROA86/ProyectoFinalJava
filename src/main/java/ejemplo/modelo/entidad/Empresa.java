@@ -43,8 +43,7 @@ public class Empresa extends Usuario {
 	@Column(columnDefinition="LONGTEXT")
 	private String descripcion;
 	
-	//mappedBy="autor"
-	@OneToOne(fetch=FetchType.EAGER)
+	@OneToMany(fetch=FetchType.EAGER)
 	private Set<Oferta> oferta;
 
 	public Long getId() {

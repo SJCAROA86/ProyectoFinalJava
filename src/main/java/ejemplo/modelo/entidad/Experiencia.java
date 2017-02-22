@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
-import javax.xml.soap.Text;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -32,7 +31,8 @@ public class Experiencia {
 	@NotNull
 	private Date fecha_fin;
 
-	private Text descripcion;
+	
+	private String descripcion;
 
 	public Long getIdEx() {
 		return idEx;
@@ -74,11 +74,11 @@ public class Experiencia {
 		this.fecha_fin = fecha_fin;
 	}
 
-	public Text getDescripcion() {
+	public String getDescripcion() {
 		return descripcion;
 	}
 
-	public void setDescripcion(Text descripcion) {
+	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
 
